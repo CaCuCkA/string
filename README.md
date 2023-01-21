@@ -17,7 +17,7 @@ To install our library you need to:
 ```bash
 $ mkdir ~/workspace
 $ cd ~/workspace
-$ git clone https://github.com/ucu-cs/lab2_make_cmake-yakovkin_varanytsa
+$ git clone https://github.com/CaCuCkA/string.git
 $ cd lab2_make_cmake-yakovkin_varanytsa
 ```
 ### Compilation
