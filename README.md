@@ -1,7 +1,5 @@
-# Lab work 2: MAKE, CMAKE
-Authors (team): <a src="https://github.com/CaCuCkA">Mykola Yakovkin</a>,
-<a src="https://github.com/vvaranytsa">Ivan Varanytsia</a><br>
-Variant: 2
+# String library
+Authors (team): <a src="https://github.com/CaCuCkA">Mykola Yakovkin</a>
 ## Prerequisites
 
 - CMake 3.14 or higher. make 3.81 or higher.
@@ -55,9 +53,4 @@ To run it, use:
 ```asm
 $ ./bin/tests
 ```
-
-# Additional tasks
-not done
-
-Ivan Varanytsia, Mykola Yakovkin
 
