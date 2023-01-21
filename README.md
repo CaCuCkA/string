@@ -14,7 +14,7 @@ Authors (team): <a src="https://github.com/CaCuCkA">Mykola Yakovkin</a>
 
 ### Installation
 To install our library you need to:
-```asm
+```bash
 $ mkdir ~/workspace
 $ cd ~/workspace
 $ git clone https://github.com/ucu-cs/lab2_make_cmake-yakovkin_varanytsa
@@ -38,7 +38,7 @@ To compile the library you need to:
 $ make TARGET_NAME=dynamic 
 ```
 OR
-```asm
+```bash
 $ make TARGET_NAME=static 
 ```
 
