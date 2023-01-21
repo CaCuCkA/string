@@ -24,7 +24,7 @@ $ cd lab2_make_cmake-yakovkin_varanytsa
 How to compile <strong>our string library</strong>
 ### Using `compile.sh`
 To compile the library you need to use the following command:
-```asm
+```bash
 $ ./compile.sh -cr
 ```
 `--clean` option can be used to clean the build directory.For example, if you want to clean the build directory and compile the libraries, use the following commands:
@@ -34,7 +34,7 @@ $ ./compile.sh -c
 ```
 ### Using `Make`
 To compile the library you need to:
-```asm
+```bash
 $ make TARGET_NAME=dynamic 
 ```
 OR
@@ -45,12 +45,12 @@ $ make TARGET_NAME=static
 ### Using `CMake`
 Our library also supports CMake.
 To build the project, you need to:
-```asm
+```bash
 $ cmake -B build
 $ cmake --build build
 ```
 To run it, use:
-```asm
+```bash
 $ ./bin/tests
 ```
 
