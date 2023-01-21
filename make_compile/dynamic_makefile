@@ -1,0 +1,25 @@
+CXX ?= g++
+CXXFLAG ?= -O3
+LDFLAGS ?= -O3
+OBJ_DIR :=  ../lib/make/dynamic/obj
+BIN_DIR :=  ../lib/make/dynamic/bin
+LIB_NAME := mystring
+SOURCES := $(wildcard ../library/src/*.cpp)
+OBJS := $(patsubst ../lib/src/*.cpp,$(OBJ_DIR)/%.o,$(SOURCES))
+
+all: create_dirs $(BIN_DIR)/$(LIB_NAME)
+
+create_dirs:
+	mkdir -p $(BIN_DIR)
+	mkdir -p $(OBJ_DIR)
+
+$(BIN_DIR)/$(LIB_NAME): $(OBJS)
+	$(CXX) -shared -fPIC -o $(BIN_DIR)/lib$(LIB_NAME).so $^
+
+$(OBJ_DIR)/%.o: $(SOURCES)
+	$(CXX) -c $(CXXFLAGS) $< -o $@
+
+.PHONY :
+
+clean:
+	rm -r $(OBJ_DIR)

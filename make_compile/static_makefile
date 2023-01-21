@@ -1,0 +1,19 @@
+CXX ?= g++
+CXXFLAGS ?= -O3
+OBJ_DIR :=  ../lib/make/static/obj
+BIN_DIR := ../lib/make/static/bin
+SOURCES := $(wildcard ../library/src/*.cpp)
+LIB_NAME = mystring
+OBJS := $(patsubst ../library/src/%.cpp,$(OBJ_DIR)/%.o,$(SOURCES))
+
+all: create_dirs $(BIN_DIR)/$(LIB_NAME)
+
+create_dirs:
+	mkdir -p $(BIN_DIR)
+	mkdir -p $(OBJ_DIR)
+
+$(BIN_DIR)/$(LIB_NAME): $(OBJS)
+	ar rcs $(BIN_DIR)/$(LIB_NAME).a $^
+
+$(OBJ_DIR)/%.o: $(SOURCES)
+	$(CXX) -c $(CXXFLAGS) $< -o $@

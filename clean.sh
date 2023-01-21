@@ -1,0 +1,1 @@
+if [ -d "build" ]; then rm -Rf build; fi
