@@ -18,7 +18,7 @@ To install our library you need to:
 $ mkdir ~/workspace
 $ cd ~/workspace
 $ git clone https://github.com/CaCuCkA/string.git
-$ cd lab2_make_cmake-yakovkin_varanytsa
+$ cd string
 ```
 ### Compilation
 How to compile <strong>our string library</strong>
